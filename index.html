@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+      background-color: #eaf4ff;
+      color: #2c2c2c;
+    }
+
+    .header {
+      border-bottom: 2px solid #1f3a5f;
+      overflow: hidden;
+      padding-bottom: 10px;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 6px;
+    }
+
+    .leftHeader {
+      float: left;
+      width: 70%;
+    }
+
+    .leftHeader h2 {
+      color: #1f3a5f;
+    }
+
+    .rightHeader {
+      float: right;
+      width: 30%;
+      text-align: right;
+    }
+
+    .rightHeader img {
+      width: 120px;
+      height: 140px;
+      border: 2px solid #1f3a5f;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .left {
+      float: left;
+      width: 40%;
+      background-color: #1f3a5f;
+      color: #ffffff;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 6px 0 0 6px;
+      min-height: 420px;
+    }
+
+    .right {
+      float: left;
+      width: 60%;
+      background-color: #ffffff;
+      padding: 15px;
+      box-sizing: border-box;
+      height: 420px;
+      overflow-y: auto;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .left h3 {
+      cursor: pointer;
+      border-bottom: 1px solid #aac7e8;
+      padding-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .left h3:hover {
+      color: #aad4ff;
+    }
+
+    .left p {
+      font-size: 14px;
+      margin-left: 10px;
+      color: #dbe9f7;
+    }
+
+    .right h3 {
+      color: #1f3a5f;
+      border-bottom: 1px solid #cfdfee;
+      padding-bottom: 5px;
+    }
+
+    .content {
+      display: none;
+    }
+
+    @media screen and (max-width: 700px) {
+      .left, .right {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+
+  <script>
+    function show(id) {
+      document.getElementById("obj").style.display = "none";
+      document.getElementById("edu").style.display = "none";
+      document.getElementById("ach").style.display = "none";
+      document.getElementById("skill").style.display = "none";
+      document.getElementById("hob").style.display = "none";
+      document.getElementById(id).style.display = "block";
+    }
+  </script>
+
+</head>
+<body>
+
+  <div class="header">
+    <div class="leftHeader">
+      <h2>Ananya Singh</h2>
+      <p>Reg. No.: 24BRS1291</p>
+      <p>Mobile: 6394805624</p>
+      <p>Email: ananya.singh2024@vitstudent.ac.in</p>
+    </div>
+
+    <div class="rightHeader">
+      <img src="ananyavit.jpg">
+    </div>
+  </div>
+
+  <br>
+
+  <div class="left">
+    <h3 onclick="show('obj')">Objective</h3>
+    <p>Career goals</p>
+
+    <h3 onclick="show('edu')">Education</h3>
+    <p>Academic background</p>
+
+    <h3 onclick="show('ach')">Achievements</h3>
+    <p>Awards & activities</p>
+
+    <h3 onclick="show('skill')">Technical Skills</h3>
+    <p>Languages & projects</p>
+
+    <h3 onclick="show('hob')">Hobbies</h3>
+    <p>Interests</p>
+  </div>
+
+  <div class="right">
+
+    <div id="obj" class="content" style="display:block;">
+      <h3>Objective</h3>
+      <p>
+        I am a second-year Computer Science Engineering student specializing in Artificial Intelligence and Robotics at Vellore Institute of Technology, Chennai. I aim to pursue advanced studies in AI-related domains through a master’s degree and contribute to the development of impactful social robotics solutions.
+      </p>
+      <p>
+        My objective is to apply my technical knowledge, research orientation, and problem-solving skills to create intelligent systems that address real-world challenges.
+      </p>
+    </div>
+
+    <div id="edu" class="content">
+      <h3>Educational Background</h3>
+      <p>
+        I completed my schooling from City Montessori School (CMS), Lucknow, in 2024. I secured 97% in the ICSE Class 10 examination and 94% in the ISC Class 12 examination with Physics, Chemistry, and Mathematics as my core subjects.
+      </p>
+      <p>
+        I am currently pursuing a Bachelor of Technology in Computer Science Engineering with a specialization in Artificial Intelligence and Robotics at Vellore Institute of Technology, Chennai, Tamil Nadu. As of my second year, I hold a CGPA of 8.5.
+      </p>
+    </div>
+
+    <div id="ach" class="content">
+      <h3>Achievements</h3>
+      <p>
+        I have received multiple medals in art competitions at the school level, reflecting creativity and consistency. I have actively participated in sports such as chess, badminton, and skating.
+      </p>
+      <p>
+        I have attended and contributed to various technical workshops and events, including a full-stack development workshop, hackathons, and robotics workshops, enhancing my hands-on technical exposure.
+      </p>
+    </div>
+
+    <div id="skill" class="content">
+      <h3>Technical Skills</h3>
+      <p>
+        I possess working knowledge of programming languages including Java, Python, C, C++, MATLAB, and Assembly Language.
+      </p>
+      <p>
+        My project experience includes developing an automatic home security alert system using Arduino with SMS notification, a RESQ robot for disaster management using microprocessors and assembly language, a digital system design project for an automatic door lock system, a Li-Fi based concept project, and a command-window simulation project in Operating Systems.
+      </p>
+      <p>
+        I have also worked on concepts related to Computer Architecture and am currently engaged in ongoing research on a machine-learning-based child vaccination alert system.
+      </p>
+    </div>
+
+    <div id="hob" class="content">
+      <h3>Hobbies & Interests</h3>
+      <p>
+        My interests include participating in art-related activities, playing chess and badminton, skating, exploring emerging technologies, and engaging in robotics and AI-based innovations.
+      </p>
+      <p>
+        I enjoy learning through practical experimentation and collaborative technical events.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
